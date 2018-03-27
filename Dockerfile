@@ -1,11 +1,11 @@
 FROM node:slim
-MAINTAINER Antonio Aguilar
 ENV USER root
 ENV DISPLAY ":1"
 ENV DBUS_SESSION_BUS_ADDRESS=/dev/null
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -f -y \
     net-tools \
     nano \
+    htop \
     vim \
     curl \
     grep \
